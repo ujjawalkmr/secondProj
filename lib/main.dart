@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test5/appalertbox.dart';
 import 'package:test5/elevetedButton.dart';
+import 'package:test5/outlined.dart';
 //This is for radio button
 enum gender{male,female,other}
 void main() {
@@ -113,7 +114,7 @@ class _MyApp2State extends State<MyApp2> {
             },
           ),
         ),
-        //OutlinedButton
+        //OutlinedButton and also used to goto outlined(NormalColumn)
         Container(
           height: 50.0,
           //color: Colors.amberAccent,
@@ -131,9 +132,8 @@ class _MyApp2State extends State<MyApp2> {
                   fontSize: 25.0
               ),),
             onPressed: (){
-              setState(() {
-                print('hii');
-              });
+              //this is used to goto outlined(NormalColumn)
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>NormalColumn()));
             },
           ),
         ),
