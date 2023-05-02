@@ -97,7 +97,8 @@ class _MyApp2State extends State<MyApp2> {
                 Navigator.push(context, MaterialPageRoute(builder: (context)=>FirstPage()));
               },
               child: Icon(
-                Icons.back_hand_outlined,
+                Icons.expand,
+                color: Colors.white,
               ),
             )
       )
