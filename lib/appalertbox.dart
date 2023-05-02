@@ -14,7 +14,7 @@ class _MyAppBarState extends State<MyAppBar> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home:
-      MyApp2(),
+      MyApp3(),
 
     );
   }
@@ -23,14 +23,14 @@ class _MyAppBarState extends State<MyAppBar> {
 
 
 
-class MyApp2 extends StatefulWidget {
-  const MyApp2({Key? key}) : super(key: key);
+class MyApp3 extends StatefulWidget {
+  const MyApp3({Key? key}) : super(key: key);
 
   @override
-  State<MyApp2> createState() => _MyApp2State();
+  State<MyApp3> createState() => _MyApp3State();
 }
 
-class _MyApp2State extends State<MyApp2> {
+class _MyApp3State extends State<MyApp3> {
   //This is method for search and menu icon for AlertBox
   void m1(){
     setState(() {
