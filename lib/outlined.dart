@@ -24,6 +24,7 @@ class NormalColumn extends StatelessWidget {
 
                   child: Text('Helo World'),
                 ),
+                //this container also used to go back to previus page main.dart
                 Container(
                   color: Colors.yellow,
                   height: 100.0,
