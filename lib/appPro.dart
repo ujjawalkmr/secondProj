@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'colrow.dart';
 void main() {
   runApp(AppPro());
 }
@@ -10,6 +10,28 @@ class AppPro extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
+        appBar: AppBar(
+          leading: TextButton(
+            onPressed: (){
+              Navigator.pop(context);
+            },
+            child: Icon(
+              Icons.arrow_back,
+              color: Colors.white,
+            ),
+          ),
+          actions: [
+            TextButton(
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>ColRow()));
+                },
+                child: Icon(
+                  Icons.home,
+                  color: Colors.white,
+                ),
+                )
+          ],
+        ),
         body: SafeArea(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
