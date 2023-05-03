@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'appPro.dart';
 
 class SimpleButton extends StatefulWidget {
   const SimpleButton({Key? key}) : super(key: key);
@@ -34,7 +34,9 @@ class _SimpleButtonState extends State<SimpleButton> {
           child: Center(
             child: ElevatedButton(
               //child: Text("Elevated Button", style: TextStyle(fontSize: 30)),
-              onPressed:(){},
+              onPressed:(){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>AppPro()));
+              },
 
               style: ElevatedButton.styleFrom(
                 padding: EdgeInsets.all(5.0),
