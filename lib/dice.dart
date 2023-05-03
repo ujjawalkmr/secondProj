@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
+import 'simpleButton.dart';
 
 void main() {
   runApp( DicePage(),
@@ -56,6 +57,16 @@ class  DicePageState extends State<DicePage> {
                 Icons.arrow_back,
               ),
             ),
+            actions: [
+              TextButton(
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>SimpleButton()));
+                  },
+                  child: Icon(
+                    Icons.move_down
+                  )
+              )
+            ],
             //this is foe give the text in  center of the appbar
             centerTitle: true,
             title: Text(
@@ -91,6 +102,19 @@ class  DicePageState extends State<DicePage> {
     );
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
