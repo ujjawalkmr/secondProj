@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'main.dart';
 import 'package:test5/dialogBox.dart';
 void main() {
   runApp(
@@ -44,7 +43,7 @@ class NormalColumn extends StatelessWidget {
                   child: TextButton(
                     onPressed: ()
                     {
-                      Navigator.push(context, MaterialPageRoute(builder: (context)=>MyApp()));
+                      Navigator.pop(context);
                     },
                     child: Text(
                       'go to back'
