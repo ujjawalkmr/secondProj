@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test5/outlined.dart';
-
+import 'dice.dart';
 
 void main(){
   runApp(
@@ -68,7 +68,7 @@ class _DialogBox2State extends State<DialogBox2> {
              ),
                 TextButton(
                  onPressed: (){
-
+                   Navigator.push(context, MaterialPageRoute(builder: (context)=>DicePage()));
                   },
                   child:Text('Accept'),
                 ),
