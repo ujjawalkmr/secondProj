@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'listview.dart';
 void main() {
   runApp(ColRow());
 }
@@ -27,6 +27,16 @@ class ColRow extends StatelessWidget {
                       color: Colors.blue,
                       height: 100.0,
                       width: 100.0,
+                      //this is used to go on ListView Example page(listview.dart)
+                      child: TextButton(
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>ListWidget()));
+                        },
+                        child: Text('ListView',
+                        style: TextStyle(
+                          color: Colors.white
+                        ),),
+                      ),
                     ),
                     Container(
                       color: Colors.pink,
